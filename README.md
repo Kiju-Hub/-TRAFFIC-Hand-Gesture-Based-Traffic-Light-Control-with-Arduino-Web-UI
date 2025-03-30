@@ -84,11 +84,8 @@
 ---
 
 ## 🪛 회로 구성
-
+![image](https://github.com/user-attachments/assets/1ba16ffb-8499-4b6b-901f-c8a51bb6eb83)
 ```
-
-![KakaoTalk_20250330_150839322](https://github.com/user-attachments/assets/a726306f-9c0f-4fc5-a869-7e56272dc7db)
-
 --- 
 
 [Button1] --- Pin 5       (All Blink Mode)
@@ -185,7 +182,7 @@ CONFIG,Red,2500,Yellow,500,Blue,4000
 - 검지만 펴고 다른 손가락은 접은 상태 → 설정 모드 진입
 - `handleIndexControlMode()`에서 손가락 위치를 기준으로 슬라이더를 실시간 제어
 - 일정 시간 손이 사라지면 자동으로 `sendConfig()` 호출
-
+ 
 ---
 ---
 
@@ -219,7 +216,7 @@ CONFIG,Red,2500,Yellow,500,Blue,4000
 ## 🎯 추가된 기능 요약
 
 기존에는 **물리 버튼(인터럽트)**을 통해서만 LED 모드 전환이 가능했지만,  
-이번 프로젝트에서는 **웹캠 기반 손 제스처 인식**을 추가하여 다음 기능이 확장되었습니다:
+이번 프로젝트에서는 **웹캠 기반 손 제스처 인식**을 추가하여 다음 기능이 확장
 
 | 기능 | 설명 |
 |------|------|
