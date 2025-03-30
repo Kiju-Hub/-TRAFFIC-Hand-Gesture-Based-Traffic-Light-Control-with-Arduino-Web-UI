@@ -6,7 +6,7 @@
 ---
 
 ## 🔴 시연 동영상  
-
+> https://youtu.be/AaC6BXiR3fo 시연 동영상입니다. 
 
 ---
 ---
@@ -86,6 +86,11 @@
 ## 🪛 회로 구성
 
 ```
+
+![KakaoTalk_20250330_150839322](https://github.com/user-attachments/assets/a726306f-9c0f-4fc5-a869-7e56272dc7db)
+
+--- 
+
 [Button1] --- Pin 5       (All Blink Mode)
 [Button2] --- Pin 6       (Red Only Mode)
 [Button3] --- Pin 7       (All Off Mode)
@@ -194,9 +199,10 @@ CONFIG,Red,2500,Yellow,500,Blue,4000
 ### 🔴 모드 변경 제스처 예시
 | 제스처 | 설명 |
 |--------|------|
-| 엄지척 | All Blink 모드 진입 |
-| 주먹 | All Off 모드 진입 |
-| 브이(V) | Red Only 모드 진입 |
+| 오케이(OK) | All Blink 모드 진입 |
+| 브이(V) | All Off 모드 진입 |
+| 주먹 | Red Only 모드 진입 |
+| 손바닥 | Normal 모드 진입 |
 
 > ✨ **Tip:** 손 제스처가 인식되면 `Serial.write()`를 통해 해당 명령어(`A`, `O`, `R` 등)가 Arduino로 전송됩니다.
 
@@ -217,9 +223,9 @@ CONFIG,Red,2500,Yellow,500,Blue,4000
 
 | 기능 | 설명 |
 |------|------|
-| 🧤 제스처 기반 모드 변경 | 주먹(👊), 브이✌️, 손바닥(🖐️) 등을 인식하여 `"Red Only"`, `"All Blink"`, `"All Off"`, `"Normal"` 모드 전환 |
+| 🧤 제스처 기반 모드 변경 | 주먹(👊), 오케이(👌), 브이✌️, 손바닥(🖐️) 등을 인식하여 `"Red Only"`, `"All Blink"`, `"All Off"`, `"Normal"` 모드 전환 |
 | 👉 제스처 기반 슬라이더 조절 | **검지만 펴기**로 설정 모드 진입 후, 손가락을 좌우로 움직여 Red/Yellow/Blue 지속 시간 조절 |
-| ⏳ 자동 설정 종료 | 손이 사라지고 2초 이상 제스처 없음 → 설정 모드 자동 종료 및 변경값 전송 |
+| ⏳ 자동 설정 종료 | 손이 사라지고 3초 이상 제스처 없음 → 설정 모드 자동 종료 및 변경값 전송(2초 동안 피드백 메시지 전송) | 
 
 
 ---
@@ -228,7 +234,7 @@ CONFIG,Red,2500,Yellow,500,Blue,4000
 
 ## 📎 결론 및 향후 발전 방향
 
-이번 Hand-Gesture-Based-Traffic 프로젝트는 기존의 Arduino-Based-Traffic-Light-Control-System을 활용하여,  
+이번 Hand-Gesture-Based-Traffic 프로젝트는 기존의 Arduino-Based-Traffic-Light-Control-System을 활용하여, 하드웨어 조작 없이도도
 누구나 직관적으로 손만으로 LED 모드를 전환하고 제어할 수 있는 인터페이스를 제공하도록 하였으며 기존 버튼 중심의 입력 장치보다 더 유연하고 자연스러운 상호작용 방식을 제시합니다.
 
 
